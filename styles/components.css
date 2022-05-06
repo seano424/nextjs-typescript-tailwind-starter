@@ -1,5 +1,5 @@
 @layer components {
   .button {
-    @apply rounded px-8 py-2 bg-white text-indigo-600 font-semibold;
+    @apply rounded-lg px-8 py-2 bg-white text-indigo-600 font-semibold;
   }
 }

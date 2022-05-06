@@ -36,13 +36,13 @@ export default function Dropdown(props: Props) {
     >
       <div className="flex items-center space-x-1 cursor-pointer">
         <span>{list.title}</span>
-        <Icon path={chevronDown} />
+        <Icon size="sm" path={chevronDown} />
       </div>
       <div
-        className={`absolute top-[3.5rem] w-40 rounded bg-white text-black p-4 
-        ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+        className={`absolute transition-all duration-500 ease-linear top-[5rem] w-40 rounded bg-white text-black p-4 
+        ${isOpen ? 'opacity-100' : 'opacity-0 hidden'}`}
       >
-        <ul>
+        <ul className='grid gap-3 text-gray-600'>
           {list.listItems.map((item, i) => (
             <li key={i}>{item.title}</li>
           ))}

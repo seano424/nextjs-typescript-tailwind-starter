@@ -1,1 +1,5 @@
-@layer utilities {}
+@layer utilities {
+  .container {
+    @apply px-28
+  }
+}

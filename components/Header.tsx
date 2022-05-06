@@ -9,9 +9,9 @@ export default function Header(props: HeaderProps) {
   const { sitename = 'ONJUNO' } = props
 
   return (
-    <nav className="flex justify-between py-4">
+    <nav className="flex justify-between py-4 mt-5 container">
       <ul className="flex items-center space-x-4">
-        <li className="flex space-x-2">
+        <li className="flex space-x-2 text-3xl font-bold">
           <span>💙</span>
           <span>{sitename}</span>
         </li>
