@@ -1,4 +1,4 @@
-import { chevronDown } from '../helpers/icons'
+import { chevronDown } from '../constants/icons'
 
 interface IconProps {
   path: string
@@ -15,7 +15,7 @@ export default function Icon(props: IconProps) {
       stroke="currentColor"
       strokeWidth="2"
     >
-      <path stroke-linecap="round" stroke-linejoin="round" d={path} />
+      <path strokeLinecap="round" strokeLinejoin="round" d={path} />
     </svg>
   )
 }

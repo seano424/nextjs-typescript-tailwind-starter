@@ -1,5 +1,5 @@
-import { chevronDown } from '../helpers/icons'
-import Icon from '@/components/Icon'
+import Dropdown from './Dropdown'
+import { dropdownList } from 'constants/dropdownList'
 
 interface HeaderProps {
   sitename: string
@@ -7,6 +7,7 @@ interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
   const { sitename = 'ONJUNO' } = props
+
   return (
     <nav className="flex justify-between py-4">
       <ul className="flex items-center space-x-4">
@@ -14,14 +15,9 @@ export default function Header(props: HeaderProps) {
           <span>💙</span>
           <span>{sitename}</span>
         </li>
-        <li className="flex items-center space-x-1 cursor-pointer">
-          <span>Company</span>
-          <Icon path={chevronDown} />
-        </li>
-        <li className="flex items-center space-x-1 cursor-pointer">
-          <span>Learn</span>
-          <Icon path={chevronDown} />
-        </li>
+        {dropdownList.map((list, i) => (
+          <Dropdown key={i} i={i} list={list} />
+        ))}
       </ul>
       <ul className="flex items-center space-x-4">
         <li>
