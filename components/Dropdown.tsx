@@ -1,7 +1,5 @@
 import { useRef, useState } from 'react'
-import { chevronDown } from 'constants/icons'
 import useOnClickOutside from '../hooks/useOnClickOutside'
-import Icon from './Icon'
 
 interface Props {
   list: {
@@ -32,11 +30,10 @@ export default function Dropdown(props: Props) {
       onClick={handleClick}
       ref={dropdownRef}
       key={i}
-      className="flex flex-col select-none"
+      className="flex-col select-none hidden lg:flex"
     >
       <div className="flex items-center space-x-1 cursor-pointer">
         <span>{list.title}</span>
-        <Icon size="sm" path={chevronDown} />
       </div>
       <div
         className={`absolute transition-all duration-500 ease-linear top-[5rem] w-40 rounded bg-white text-black p-4 
