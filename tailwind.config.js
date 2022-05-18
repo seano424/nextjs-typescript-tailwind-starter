@@ -1,10 +1,19 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cabinet: '"CabinetGrotesk", serif',
+        gambarino: '"Gambarino", serif',
+      },
+    },
+    container: {
+      center: false,
+      padding: '1rem',
+    },
     debugScreens: {
       position: ['bottom', 'right'],
       style: {
@@ -15,6 +24,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-debug-screens')
+    require('tailwindcss-debug-screens'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
   ],
 }
