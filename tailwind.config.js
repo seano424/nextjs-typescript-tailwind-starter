@@ -17,7 +17,7 @@ module.exports = {
     debugScreens: {
       position: ['bottom', 'right'],
       style: {
-        backgroundColor: '#C0FFEE',
+        backgroundColor: 'white',
         color: 'black',
       },
       prefix: 'screen: ',
