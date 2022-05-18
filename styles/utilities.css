@@ -1,0 +1,13 @@
+@layer utilities {
+  .py-base {
+    @apply py-6 sm:py-10 md:py-32;
+  }
+
+  .my-base {
+    @apply my-8 sm:my-14 md:my-20;
+  }
+
+  .px-base {
+    @apply lg:px-80;
+  }
+}

@@ -1,0 +1,27 @@
+@layer components {
+  .link {
+    @apply text-yellow-300 text-5xl font-black uppercase tracking-tighter;
+    font-family: 'CabinetGrotesk';
+  }
+
+  .card {
+    @apply shadow-lg rounded-md p-5 tracking-widest leading-loose;
+  }
+
+  .footer {
+    @apply flex w-full p-5 justify-center gap-6 uppercase font-extralight tracking-tighter;
+    font-family: 'CabinetGrotesk';
+  }
+
+  .h1 {
+    @apply text-7xl font-extrabold xl:text-8xl;
+  }
+
+  .p {
+    @apply text-4xl font-extrabold xl:text-5xl max-w-xl;
+  }
+
+  .page-padding {
+    @apply pt-56 pb-8;
+  }
+}
