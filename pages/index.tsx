@@ -4,7 +4,7 @@ import type { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="h-[1000px] page-padding">
+      <div className="h-[1000px] page-padding container">
         <h1 className="h1">Make friends.</h1>
         <h1 className="h1">Create activities.</h1>
         
