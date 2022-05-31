@@ -8,33 +8,31 @@ interface Props {
 export default function Menu(props: Props) {
   const { showMenu } = props
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       {showMenu && (
-        <motion.section
-          initial={{ opacity: 0, y: -1000 }}
+        <motion.ul
           transition={{ duration: 0.5 }}
-          animate={{ opacity: 1, y: 0}}
-          exit={{ opacity: 0, y: -1000 }}
-          className="lg:hidden"
+          animate={{
+            x: [-800, 0],
+          }}
+          className="absolute top-0 left-0 right-1/2 bottom-0 flex flex-col gap-4 shadow-md bg-blue-700 border-t border-gray-50 px-16 py-40 z-10"
         >
-          <ul className="absolute left-0 w-full flex flex-col gap-4 shadow-md bg-white border-t border-gray-50 px-base py-base">
-            <Link href="/">
-              <a className="link">Home</a>
-            </Link>
-            <Link href="/about">
-              <a className="link">About</a>
-            </Link>
-            <Link href="/projects">
-              <a className="link">Projects</a>
-            </Link>
-            <Link href="/reviews">
-              <a className="link">Reviews</a>
-            </Link>
-            <Link href="/contact-us">
-              <a className="link">Contact Us</a>
-            </Link>
-          </ul>
-        </motion.section>
+          <Link href="/">
+            <a className="link">Home</a>
+          </Link>
+          <Link href="/about">
+            <a className="link">About</a>
+          </Link>
+          <Link href="/projects">
+            <a className="link">Projects</a>
+          </Link>
+          <Link href="/reviews">
+            <a className="link">Reviews</a>
+          </Link>
+          <Link href="/contact-us">
+            <a className="link">Contact Us</a>
+          </Link>
+        </motion.ul>
       )}
     </AnimatePresence>
   )
