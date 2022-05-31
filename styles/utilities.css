@@ -1,6 +1,6 @@
 @layer utilities {
   .py-base {
-    @apply py-6 sm:py-10 md:py-32;
+    @apply py-6 xl:py-16;
   }
 
   .my-base {
@@ -8,6 +8,28 @@
   }
 
   .px-base {
-    @apply lg:px-80;
+    @apply px-8 xl:px-28;
+  }
+
+  .container {
+    @apply mx-8 xl:mx-28;
+  }
+
+  @variants responsive {
+    .masonry {
+      gap: 2em;
+      column-count: 1;
+    }
+    .masonry-sm {
+      gap: 2em;
+      column-count: 2;
+    }
+    .masonry-md {
+      gap: 2em;
+      column-count: 3;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
   }
 }

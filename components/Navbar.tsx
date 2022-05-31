@@ -1,25 +1,56 @@
+import Link from 'next/link'
+import { Spin as Hamburger } from 'hamburger-react'
 interface Props {
   logo?: string
   title?: string
+  showMenu: boolean
+  setShowMenu: (boolean: any) => void
 }
 
 export default function Navbar(props: Props) {
-  const { logo, title } = props
+  const { showMenu, setShowMenu } = props
   return (
-    <nav className="flex justify-between items-center bg-white/50 filter backdrop-blur-sm fixed w-full h-24 px-8 lg:px-base inset-0">
-      <ul className="flex items-center">
-        <li className="flex items-center gap-2 text-4xl font-extrabold capitalize">
-          <span className="text-6xl">{logo}</span>
-          <span className="max-w-sm">{title}</span>
+    <nav className="flex justify-between items-center w-full filter backdrop-blur-sm container py-4 z-10 bg-white">
+      {/* Logo */}
+      <Link href="/">
+        <a className="flex items-center gap-4 md:text-2xl font-serif font-black tracking-widest uppercase">
+          ⚪️ Salt Studios
+        </a>
+      </Link>
+      {/* Mobile Navigation */}
+      <ul
+        className="cursor-pointer select-none lg:hidden"
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <li>
+          <Hamburger
+            toggled={showMenu}
+            toggle={setShowMenu}
+            size={20}
+            duration={0.3}
+            easing="ease-in"
+            label="Show Menu"
+          />
         </li>
       </ul>
-      <ul className="flex items-center gap-4">
-        <li>About</li>
-        <li>News</li>
-        <li className="border border-black px-4 py-2 rounded-full">
-          Get the app
-        </li>
-      </ul>
+      {/* Main Navigation */}
+      <div className="hidden items-center gap-8 lg:flex">
+        <Link href="/">
+          <a className="hover:text-blue-600">Home</a>
+        </Link>
+        <Link href="/about">
+          <a className="hover:text-blue-600">About</a>
+        </Link>
+        <Link href="/projects">
+          <a className="hover:text-blue-600">Projects</a>
+        </Link>
+        <Link href="/reviews">
+          <a className="hover:text-blue-600">Reviews</a>
+        </Link>
+        <Link href="/contact-us">
+          <a className="hover:text-blue-600">Contact Us</a>
+        </Link>
+      </div>
     </nav>
   )
 }

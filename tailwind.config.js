@@ -6,19 +6,24 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cabinet: '"CabinetGrotesk", serif',
-        gambarino: '"Gambarino", serif',
+        inter: '"Inter", sans-serif',
       },
-    },
-    container: {
-      center: false,
-      padding: '1rem',
+      colors: {
+        primary: '#65BE7D',
+        'primary-light': '#F6FBF8',
+        secondary: '#188FD9',
+        neutral: '#1C1C1C',
+        'neutral-light': '#333333',
+        'neutral-superlight': '#F7F7F7',
+      },
     },
     debugScreens: {
       position: ['bottom', 'right'],
       style: {
-        backgroundColor: 'white',
-        color: 'black',
+        backgroundColor: 'black',
+        color: 'white',
+        margin: '0.5rem',
+        padding: '0.5rem',
       },
       prefix: 'screen: ',
     },

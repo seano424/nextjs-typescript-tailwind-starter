@@ -1,6 +1,6 @@
 @layer components {
   .link {
-    @apply text-yellow-300 text-5xl font-black uppercase tracking-tighter;
+    @apply text-yellow-300 text-6xl font-black uppercase tracking-tighter;
     font-family: 'CabinetGrotesk';
   }
 
@@ -14,11 +14,19 @@
   }
 
   .h1 {
-    @apply text-7xl font-extrabold xl:text-8xl;
+    @apply text-4xl sm:text-6xl;
+  }
+
+  .h2 {
+    @apply text-5xl;
+  }
+
+  .h3 {
+    @apply sm:text-2xl font-light;
   }
 
   .p {
-    @apply text-4xl font-extrabold xl:text-5xl max-w-xl;
+    @apply font-light text-lg tracking-wider leading-relaxed;
   }
 
   .page-padding {
