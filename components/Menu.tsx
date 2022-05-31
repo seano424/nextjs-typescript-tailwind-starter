@@ -15,7 +15,7 @@ export default function Menu(props: Props) {
           animate={{
             x: [-800, 0],
           }}
-          className="absolute top-0 left-0 right-1/2 bottom-0 flex flex-col gap-8 shadow-md bg-blue-700 border-t border-gray-50 pl-16 py-40 z-10"
+          className="absolute top-0 left-0 right-1/3 xl:right-1/2 bottom-0 flex flex-col gap-12 shadow-md bg-primary border-t border-gray-50 pl-20 py-56 z-10"
         >
           <Link href="/">
             <a className="link">Home</a>
