@@ -1,7 +1,6 @@
 @layer components {
   .link {
-    @apply text-yellow-300 text-6xl font-black uppercase tracking-tighter;
-    font-family: 'CabinetGrotesk';
+    @apply text-white text-5xl uppercase tracking-tighter;
   }
 
   .card {

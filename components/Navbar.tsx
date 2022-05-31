@@ -18,8 +18,8 @@ export default function Navbar(props: Props) {
       <nav className="flex flex-row-reverse justify-between items-center w-full filter px-base py-4">
         {/* Logo */}
         <Link href="/">
-          <a className="flex items-center gap-4 md:text-2xl font-serif font-black tracking-widest uppercase">
-            ⚪️ Salt Studios
+          <a className="flex items-center gap-4 md:text-2xl tracking-widest uppercase">
+            Salt Studios
           </a>
         </Link>
         {/* Mobile Navigation */}
@@ -31,7 +31,7 @@ export default function Navbar(props: Props) {
         >
           {showMenuText && (
             <motion.li
-              transition={{ duration: .4 }}
+              transition={{ duration: 0.4 }}
               animate={{
                 scale: [0.3, 1.2],
               }}
@@ -40,7 +40,7 @@ export default function Navbar(props: Props) {
               }`}
             >
               <motion.span
-                transition={{ duration: .7 }}
+                transition={{ duration: 0.7 }}
                 animate={{
                   opacity: [0, 1],
                 }}
@@ -54,7 +54,7 @@ export default function Navbar(props: Props) {
           )}
           {!showMenuText && (
             <motion.li
-              transition={{ duration: .4 }}
+              transition={{ duration: 0.4 }}
               animate={{
                 scale: [5, 1.2],
               }}
