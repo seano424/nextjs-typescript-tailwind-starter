@@ -17,7 +17,7 @@
   }
 
   .h2 {
-    @apply text-5xl;
+    @apply text-6xl font-bold;
   }
 
   .h3 {
