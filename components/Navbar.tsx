@@ -11,7 +11,6 @@ interface Props {
 export default function Navbar(props: Props) {
   const { showMenu, setShowMenu } = props
   const [showMenuText, setShowMenuText] = useState(false)
-  console.log(showMenuText)
 
   return (
     <AnimatePresence>
