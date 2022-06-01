@@ -1,6 +1,10 @@
 @layer components {
   .link {
-    @apply text-white text-5xl font-bold;
+    @apply text-white text-4xl hover:text-gray-100/50 transition-all duration-150 ease-in-out font-bold md:text-5xl xl:text-7xl;
+  }
+
+  .active {
+    @apply text-gray-100/50;
   }
 
   .card {
@@ -21,7 +25,7 @@
   }
 
   .h3 {
-    @apply sm:text-2xl font-light;
+    @apply font-light sm:text-2xl;
   }
 
   .p {

@@ -17,7 +17,7 @@ export default function Navbar(props: Props) {
       <nav className="flex flex-row-reverse justify-between items-center w-full filter px-8 py-4 z-20 fixed">
         {/* Logo */}
         <Link href="/">
-          <a className="flex items-center gap-4 md:text-2xl tracking-widest uppercase text-primary">
+          <a className="flex items-center gap-4 sm:text-2xl tracking-widest uppercase text-primary">
             Salt Studios
           </a>
         </Link>
