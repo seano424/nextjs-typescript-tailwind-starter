@@ -42,11 +42,8 @@ export default function VerticalGallery(props: Props) {
   return (
     <section>
       {images.map((image, i) => (
-        <Link href={image.link}>
-          <a
-            key={i}
-            className="container block relative h-[400px] lg:h-[600px] xl:h-[800px] w-full cursor-pointer"
-          >
+        <Link key={i} href={image.link}>
+          <a className="container block relative h-[400px] lg:h-[600px] xl:h-[800px] w-full cursor-pointer">
             <Image
               className="object-cover object-center"
               src={image.url}

@@ -1,4 +1,9 @@
 @layer utilities {
+  
+  .debug-screens::before {
+    @apply rounded shadow-none text-white bg-gray-900 m-4 opacity-100 p-2;
+  }
+  
   .py-base {
     @apply py-6 xl:py-16;
   }
@@ -15,21 +20,20 @@
     @apply my-48 mx-auto;
   }
 
-  @variants responsive {
-    .masonry {
-      gap: 2em;
-      column-count: 1;
-    }
-    .masonry-sm {
-      gap: 2em;
-      column-count: 2;
-    }
-    .masonry-md {
-      gap: 2em;
-      column-count: 3;
-    }
-    .break-inside {
-      break-inside: avoid;
-    }
+
+  .masonry {
+    gap: 2em;
+    column-count: 1;
+  }
+  .masonry-sm {
+    gap: 2em;
+    column-count: 2;
+  }
+  .masonry-md {
+    gap: 2em;
+    column-count: 3;
+  }
+  .break-inside {
+    break-inside: avoid;
   }
 }

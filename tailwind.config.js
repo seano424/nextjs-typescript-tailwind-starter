@@ -19,12 +19,6 @@ module.exports = {
     },
     debugScreens: {
       position: ['bottom', 'right'],
-      style: {
-        backgroundColor: 'black',
-        color: 'white',
-        margin: '0.5rem',
-        padding: '0.5rem',
-      },
       prefix: 'screen: ',
     },
   },
