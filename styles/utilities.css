@@ -1,25 +1,15 @@
 @layer utilities {
-  
   .debug-screens::before {
     @apply rounded shadow-none text-white bg-gray-900 m-4 opacity-100 p-2;
   }
-  
+
   .py-base {
-    @apply py-6 xl:py-16;
+    @apply py-6 sm:py-10 md:py-14;
   }
 
   .px-base {
-    @apply px-8 xl:px-28;
+    @apply px-6 sm:px-10 md:px-14;
   }
-
-  .my-base {
-    @apply my-8 sm:my-14 md:my-20;
-  }
-
-  .container {
-    @apply my-48 mx-auto;
-  }
-
 
   .masonry {
     gap: 2em;
