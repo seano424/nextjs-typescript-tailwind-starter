@@ -9,7 +9,6 @@ interface Props {
 export default function Menu(props: Props) {
   const { showMenu } = props
   const { pathname } = useRouter()
-  console.log(pathname)
 
   const container = {
     hidden: {
